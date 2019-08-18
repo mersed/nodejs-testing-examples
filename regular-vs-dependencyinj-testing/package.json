@@ -2,10 +2,18 @@
   "name": "regular-vs-dependencyinj-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "regular-implementation/team.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/_mocha ./*/*.test.js --exit"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "sinon": "^7.4.1"
+  },
+  "dependencies": {
+    "sinon-chai": "^3.3.0"
+  }
 }
