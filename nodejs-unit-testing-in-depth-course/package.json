@@ -1,0 +1,27 @@
+{
+  "name": "nodejs-unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/_mocha ./lib/*.test.js --exit",
+    "coverage": "nyc --reporter=text npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.2.0",
+    "rewire": "^4.0.1",
+    "sinon": "^7.4.1",
+    "sinon-chai": "^3.3.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.9",
+    "supertest": "^4.0.2"
+  }
+}
